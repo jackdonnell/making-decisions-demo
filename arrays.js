@@ -15,13 +15,11 @@ if (anakinAttack > kenobiAttack) {
 
 let kenobiHealth = 100
 let kenobiDefense = 100
-let anakinHealth = 100
-let anakinDefense = 100
 
 if (kenobiHealth > anakinAttack) {
     kenobiHealth -= anakinAttack
     console.log(`Kenobi\'s health is now ${kenobiHealth}`)
-} else { 
+} else if ( kenobiHealth <= 0){ 
     console.log("Kenobi was slain.")
 }
 
